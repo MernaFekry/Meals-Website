@@ -1,0 +1,277 @@
+/* Common */
+a{
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    font-size: larger;
+    /* background-color: antiquewhite;
+    z-index: 5; */
+}
+a:hover{
+    color: white;
+    cursor: pointer;
+}
+
+/* *********************************************************************************** */
+/* Sidebar Section */
+.sidebar{
+    background: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    transform: translateX(-100%);
+    
+    min-height:auto;
+}
+/* .sidebarListContainer{
+    
+} */
+.closeSection{
+    position: absolute;
+    left: 100%;
+    top: 0;
+    bottom: 0;
+    min-height:100vh;
+    max-height: f-content;
+}
+.closeSection i{
+    cursor: pointer;
+}
+.closeSection img{
+    width: 100%;
+}
+/* .sidebarSection{ */
+    /* position: relative; */
+/* } */
+/* .sidebarLayer{ */
+    /* position: fixed; */
+    /* height: 90vh; */
+/* } */
+
+
+/* *********************************************************************************** */
+/* Main Page Section */
+
+.mainPage{
+    background-color: black;
+}
+
+.foodItem img{
+    width: 100%;
+}
+.foodItem{
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+.mealLayer{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.5);
+    transform: translateY(100%);
+}
+.foodItem:hover .mealLayer{
+    transform: translateY(0);
+    transition: .7s all ease-in;
+}
+
+.mealDetails{
+    /* width: 50%; */
+    /* background-color: #6E9E3A; */
+}
+.mealDetailsText{
+    /* width: 100%; */
+    /* background-color: #9E403A; */
+}
+.mealDetails img{
+    width: 80%;
+}
+
+
+
+
+/* *********************************************************************************** */
+/* *********************************************************************************** */
+/* Categories HTML File */
+.categories{
+    background-color: black;
+    /* min-height: 100vh */
+}
+.categoriesContainer{
+    /* margin-top: 50px; */
+    margin: auto;
+    width: 90%;
+}
+.categoryItem img{
+    width: 100%;
+}
+.categoryItem{
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.categoryHover{
+    /* display: none; */
+    background-color: rgba(255, 255, 255, 0.8);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transform: translateY(105%);
+    
+}
+.categoryItem:hover .categoryHover{
+    transform: translateY(0);
+    transition: .7s all ease-in;
+    border-radius: 5%;
+}
+
+
+
+
+/* *********************************************************************************** */
+/* *********************************************************************************** */
+/* ContactUs HTML File */
+.contactUs{
+    background-color: black;
+    min-height: 100vh;
+}
+.contactUsContainer{
+    width: 50%;
+}
+.contactRow{
+    margin-bottom: 15px;
+}
+.contactRow input{
+    padding: 10px;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+
+
+/* *********************************************************************************** */
+/* *********************************************************************************** */
+/* Search HTML File */
+.searchSection{
+    background-color: black;
+    min-height: 100vh;
+}
+.searchContainer{
+
+}
+.searchItem input{
+    background-color: black;
+    padding: 10px;
+    text-align: center;
+    border-top: none;
+    border-left:none ;
+    border-right: none;
+}
+.searchImg img{
+    width: 100%;
+}
+.searchItems{
+    position: relative;
+    overflow: hidden;
+}
+.searchMeal{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 5%;
+    transform: translateY(105%);
+}
+.searchItems:hover .searchMeal{
+    transform: translateY(0);
+    transition: .7s all ease-in;
+} 
+
+
+/* *********************************************************************************** */
+/* *********************************************************************************** */
+/* Area HTML File */
+.areaSection{
+    background-color: #0D0D0D;
+    min-height: 100vh;
+}
+.areaContainer{
+
+}
+.areaItem{
+    cursor: pointer;
+}
+.areaItem i{
+    color: #9E403A;
+}
+.areaMealItem img{
+    width: 100%;
+}
+.areaMealItem{
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+.areaMealLayer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 5%;
+    transform: translateY(105%);
+}
+.areaMealItem:hover .areaMealLayer{
+    transform: translateY(0);
+    transition: .7s all ease-in;
+}
+
+
+
+/* *********************************************************************************** */
+/* *********************************************************************************** */
+/* Ingredient HTML File */
+.ingredientsSection{
+    background-color: #0D0D0D;
+}
+.ingredientItem{
+    cursor: pointer;
+}
+.ingredientItem i {
+    color: #6E9E3A;
+    
+}
+.ingredientItem{
+    position: relative;
+    overflow: hidden;
+    /* margin-bottom: 20px; */
+    cursor: pointer;
+}
+.ingredientHover{
+    background-color: rgba(255, 255, 255, 0.8);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transform: translateY(105%);
+}
+.ingredientItem img{
+    width: 100%;
+}
+.ingredientItem:hover .ingredientHover{
+    transform: translateY(0);
+    transition: .7s all ease-in;
+    border-radius: 5%;
+}
